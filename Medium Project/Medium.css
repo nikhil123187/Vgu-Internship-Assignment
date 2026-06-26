@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 75px;
+    background-color: #f6f3ec;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    margin-left: 150px;
+    font-size: 30px;
+}
+#spcl{
+    height: 100%;
+    width: 100%;
+    color: #f6f3ec;
+}
+.link{
+    margin-right: 200px;
+    
+}
+.link a{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+#spcl{
+    color: white;
+    background-color: black;
+    border-radius: 60px;
+    padding: 8px 12px;
+}
+
+#main{
+    
+    height: 580px;
+    background-color: #f6f3ec;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    margin-left: 180px;
+   
+}
+.contentA{
+    margin-top: 120px;
+    font-size: 8em;
+    font-weight: lighter;
+   
+}
+.contentB{
+    font-size: 8em;
+    font-weight: lighter;
+    margin-top: -50px;
+}
+
+.content p{
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.content a{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+div.image img{
+    height: 100%;
+    margin-top: 13px;
+}
+footer{
+    background-color: #f6f3ec;
+    height: 73px;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+  /* 992px se choti screen */
+@media (max-width:992px){
+
+    .logo{
+        margin-left:40px;
+    }
+
+    .link{
+        margin-right:40px;
+    }
+
+    .content{
+        margin-left:50px;
+    }
+
+    .contentA,
+    .contentB{
+        font-size:5em;
+    }
+
+    .content p{
+        font-size:1.2em;
+    }
+
+    .image img{
+        width:350px;
+        height:auto;
+    }
+
+}
+
+/* 768 se choti ke lie */
+@media (max-width:768px){
+
+    .container{
+        height:auto;
+        flex-direction:column;
+        padding:20px 0;
+    }
+
+    .logo{
+        margin:0;
+        margin-bottom:20px;
+    }
+
+    .link{
+        margin:0;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .link a{
+        margin:10px;
+    }
+
+    #main{
+        flex-direction:column;
+        height:auto;
+        text-align:center;
+    }
+
+    .content{
+        margin:40px 20px;
+    }
+
+    .contentA{
+        margin-top:20px;
+        font-size:4em;
+    }
+
+    .contentB{
+        margin-top:-15px;
+        font-size:4em;
+    }
+
+    .content p{
+        font-size:1.2em;
+    }
+
+    .content a{
+        margin-left:0;
+        display:inline-block;
+    }
+
+    .image{
+        display:flex;
+        justify-content:center;
+    }
+
+    .image img{
+        width:100%;
+        max-width:400px;
+        height:auto;
+        margin-top:20px;
+    }
+
+    footer{
+        height:auto;
+        flex-wrap:wrap;
+        padding:20px;
+    }
+
+    footer a{
+        margin:8px;
+    }
+
+}
+/* 
+480px ke lie  */
+
+@media (max-width:480px){
+
+    .contentA,
+    .contentB{
+        font-size:2.8em;
+    }
+
+    .content p{
+        font-size:1em;
+    }
+
+    .logo{
+        font-size:2em;
+    }
+
+    #spcl{
+        padding:8px 16px;
+    }
+
+}
+@media (min-width:1200px){
+
+    .container{
+        padding:0 80px;
+    }
+
+    .logo{
+        margin-left:0;
+        font-size:36px;
+    }
+
+    .link{
+        margin-right:0;
+    }
+
+    .content{
+        margin-left:100px;
+        width:45%;
+    }
+
+    .contentA,
+    .contentB{
+        font-size:7rem;
+    }
+
+    .content p{
+        font-size:1.6rem;
+    }
+
+    .image img{
+        width:550px;
+        height:auto;
+    }
+
+}
+ @media (min-width:1600px){
+
+    .container{
+        padding:0 120px;
+    }
+
+    #main{
+        padding:0 80px;
+        height:700px;
+    }
+
+    .content{
+        margin-left:120px;
+    }
+
+    .contentA,
+    .contentB{
+        font-size:8rem;
+    }
+
+    .content p{
+        font-size:1.8rem;
+    }
+
+    .image img{
+        width:700px;
+        height:auto;
+    }
+
+    footer a{
+        font-size:1rem;
+    }
+
+}
+
