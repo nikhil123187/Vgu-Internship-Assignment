@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Ticket</title>
+
+    <link rel="stylesheet" href="create-ticket.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h2>SupportDesk</h2>
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="create-ticket.html">Create Ticket</a></li>
+            <li><a href="my-tickets.html">My Tickets</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="home.html">Logout</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+
+        <h1>Create Support Ticket</h1>
+
+        <form id="ticketForm">
+
+            <label>Ticket Title</label>
+            <input type="text" id="title" placeholder="Enter Ticket Title" required>
+
+            <label>Category</label>
+
+            <select id="category" required>
+                <option>Select Category</option>
+                <option>Technical Issue</option>
+                <option>Billing</option>
+                <option>Account</option>
+                <option>General Query</option>
+            </select>
+
+            <label>Priority</label>
+
+            <select id="priority" required>
+                <option>Select Priority</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <label>Description</label>
+
+            <textarea id="description" rows="6"
+            placeholder="Describe your problem..."
+            required></textarea>
+
+            <label>Attachment</label>
+
+            <input type="file">
+
+            <button type="submit">
+
+                Submit Ticket
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="create-ticket.js"></script>
+
+</body>
+</html>
